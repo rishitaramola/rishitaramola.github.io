@@ -334,42 +334,18 @@ strong {
     height: 150px;
     margin: 0 auto;
     border-radius: 50%;
-    padding: 4px;
-    background: conic-gradient(
-        var(--accent-primary),
-        var(--accent-tertiary),
-        var(--accent-warm),
-        var(--accent-gold),
-        var(--accent-primary)
-    );
-    animation: avatarSpin 6s linear infinite;
-    box-shadow: 0 0 40px rgba(108, 92, 231, 0.2),
-                0 0 80px rgba(108, 92, 231, 0.1);
-    transition: transform var(--transition-spring),
+    padding: 3px;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    box-shadow: 0 0 30px rgba(108, 92, 231, 0.15),
+                0 0 60px rgba(108, 92, 231, 0.08);
+    transition: transform var(--transition-smooth),
                 box-shadow var(--transition-smooth);
 }
 
 .avatar-ring:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 60px rgba(108, 92, 231, 0.35),
-                0 0 100px rgba(108, 92, 231, 0.15);
-}
-
-@keyframes avatarSpin {
-    from { background-position: 0deg; }
-    to { background-position: 360deg; }
-}
-
-/* Use a pseudo element for smooth rotation */
-@supports (background: conic-gradient(red, blue)) {
-    @keyframes avatarSpin {
-        0% {
-            filter: hue-rotate(0deg);
-        }
-        100% {
-            filter: hue-rotate(360deg);
-        }
-    }
+    transform: scale(1.03);
+    box-shadow: 0 0 40px rgba(108, 92, 231, 0.25),
+                0 0 80px rgba(108, 92, 231, 0.1);
 }
 
 .avatar-img {
