@@ -1311,6 +1311,20 @@ strong {
     letter-spacing: 0.04em;
 }
 
+.quote-mark-close {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 0;
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    opacity: 0.4;
+}
+
 /* ============================================
    TECH STACK MARQUEE
    ============================================ */
