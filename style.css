@@ -249,7 +249,7 @@ strong {
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 120px var(--container-padding) 80px;
+    padding: 140px var(--container-padding) 80px;
     overflow: hidden;
 }
 
@@ -326,12 +326,12 @@ strong {
 
 /* Hero Avatar */
 .hero-avatar {
-    margin-bottom: 28px;
+    margin-bottom: 32px;
 }
 
 .avatar-ring {
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
     margin: 0 auto;
     border-radius: 50%;
     padding: 3px;
@@ -353,6 +353,7 @@ strong {
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
+    object-position: center top;
     border: 3px solid var(--bg-primary);
     display: block;
 }
@@ -1261,4 +1262,289 @@ strong {
 
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(108, 92, 231, 0.5);
+}
+
+/* ============================================
+   QUOTE SECTION
+   ============================================ */
+.quote-section {
+    padding: 80px 0;
+    position: relative;
+}
+
+.hero-quote {
+    text-align: center;
+    padding: 48px 40px;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quote-mark {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1;
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    opacity: 0.4;
+}
+
+.hero-quote p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-style: italic;
+    margin-bottom: 16px;
+}
+
+.hero-quote cite {
+    font-size: 0.85rem;
+    color: var(--accent-secondary);
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+/* ============================================
+   TECH STACK MARQUEE
+   ============================================ */
+.marquee-section {
+    padding: 24px 0;
+    overflow: hidden;
+    border-top: 1px solid var(--border-subtle);
+    border-bottom: 1px solid var(--border-subtle);
+    background: var(--bg-secondary);
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marqueeScroll 30s linear infinite;
+}
+
+.marquee-track:hover {
+    animation-play-state: paused;
+}
+
+.marquee-content {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-right: 24px;
+}
+
+.marquee-item {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    transition: color var(--transition-fast);
+}
+
+.marquee-item:hover {
+    color: var(--accent-secondary);
+}
+
+.marquee-dot {
+    color: var(--accent-primary);
+    font-size: 0.5rem;
+    opacity: 0.4;
+}
+
+@keyframes marqueeScroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* ============================================
+   CURRENTLY WORKING ON
+   ============================================ */
+.current-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.current-card {
+    padding: 28px;
+}
+
+.current-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.current-status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #00d26a;
+}
+
+.pulse-dot {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.learn-dot {
+    background: var(--accent-gold);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.current-status-text {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #00d26a;
+}
+
+.current-status-text.learning {
+    color: var(--accent-gold);
+}
+
+.current-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.current-card p {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--gradient-accent);
+    border-radius: 3px;
+    transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.progress-learning {
+    background: linear-gradient(135deg, var(--accent-gold), var(--accent-warm));
+}
+
+.progress-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+/* ============================================
+   TIMELINE SECTION
+   ============================================ */
+.timeline {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 40px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent-primary), var(--accent-tertiary), transparent);
+    border-radius: 1px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 24px 28px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -33px;
+    top: 30px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--accent-primary);
+    border: 3px solid var(--bg-secondary);
+    z-index: 1;
+}
+
+.timeline-date {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent-secondary);
+    white-space: nowrap;
+    min-width: 50px;
+    padding-top: 2px;
+}
+
+.timeline-content h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.timeline-content p {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* ============================================
+   RESPONSIVE — New Sections
+   ============================================ */
+@media (max-width: 768px) {
+    .current-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-quote {
+        padding: 32px 24px;
+    }
+
+    .quote-mark {
+        font-size: 3rem;
+        left: 16px;
+    }
+
+    .timeline {
+        padding-left: 30px;
+    }
+
+    .timeline::before {
+        left: 10px;
+    }
+
+    .timeline-item::before {
+        left: -28px;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        gap: 8px;
+    }
 }
