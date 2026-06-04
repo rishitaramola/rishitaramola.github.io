@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishita Ramola — AI/ML Engineer & NLP Researcher</title>
+    <meta name="description" content="Portfolio of Rishita Ramola — B.Tech CSE student specializing in multi-agent LLM systems, NLP pipelines, and ML-driven applications. Meta PyTorch Conference National Finalist.">
+    <meta name="keywords" content="Rishita Ramola, AI, ML, NLP, LLM, Portfolio, Python, PyTorch, Developer">
+    <meta name="author" content="Rishita Ramola">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Rishita Ramola — AI/ML Engineer & NLP Researcher">
+    <meta property="og:description" content="Building multi-agent LLM systems, NLP pipelines, and ML-driven applications.">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor glow effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Ambient particles -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>RR<span class="logo-bracket">/&gt;</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="hero-orb hero-orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-avatar animate-in">
+                <div class="avatar-ring">
+                    <img src="photo.jpg" alt="Rishita Ramola" class="avatar-img">
+                </div>
+            </div>
+            <div class="hero-badge animate-in">
+                <span class="badge-dot"></span>
+                Open to Opportunities
+            </div>
+            <h1 class="hero-title animate-in">
+                <span class="hero-greeting">Hi, I'm</span>
+                <span class="hero-name">Rishita Ramola</span>
+            </h1>
+            <p class="hero-subtitle animate-in">
+                <span class="typewriter" id="typewriter"></span>
+                <span class="typewriter-cursor">|</span>
+            </p>
+            <p class="hero-description animate-in">
+                B.Tech CSE student passionate about building <strong>multi-agent LLM systems</strong>, 
+                <strong>NLP pipelines</strong>, and <strong>ML-driven applications</strong>. 
+                Dedicated to solving hard NLP problems — from document understanding to agentic workflow orchestration.
+            </p>
+            <div class="hero-cta animate-in">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/rishita-ramola-18a456326/" target="_blank" rel="noopener" class="btn btn-outline">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/rishitaramola" target="_blank" rel="noopener" class="btn btn-outline">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    <span>GitHub</span>
+                </a>
+            </div>
+            <div class="hero-stats animate-in">
+                <div class="stat">
+                    <span class="stat-number" data-target="6">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Awards</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="8">0</span>
+                    <span class="stat-label">Technologies</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">01 — About</span>
+                <h2 class="section-title">Who I Am</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text glass-card">
+                    <p>
+                        I'm a <strong>B.Tech CSE student</strong> at Graphic Era Deemed To Be University, Dehradun, 
+                        with a deep passion for <strong>Natural Language Processing</strong> and <strong>AI/ML research</strong>.
+                    </p>
+                    <p>
+                        My focus areas span document understanding, natural language query parsing, 
+                        agentic workflow orchestration, and building evaluation frameworks for LLM systems. 
+                        I thrive in fast-paced, collaborative environments and stay at the cutting edge of AI/ML research.
+                    </p>
+                    <div class="about-interests">
+                        <h3>Research Interests</h3>
+                        <div class="interest-tags">
+                            <span class="interest-tag">Natural Language Processing</span>
+                            <span class="interest-tag">LLM-based Agents</span>
+                            <span class="interest-tag">Code Generation</span>
+                            <span class="interest-tag">Document Understanding</span>
+                            <span class="interest-tag">RAG Systems</span>
+                            <span class="interest-tag">Evaluation Pipelines</span>
+                            <span class="interest-tag">ML Foundations</span>
+                            <span class="interest-tag">Prompt Engineering</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-info">
+                    <div class="info-card glass-card">
+                        <div class="info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.657 2.686 3 6 3s6-1.343 6-3v-5"/></svg>
+                        </div>
+                        <h4>Education</h4>
+                        <p class="info-main">Graphic Era University</p>
+                        <p class="info-sub">B.Tech CSE — CGPA: 8.51/10</p>
+                        <p class="info-sub">Expected June 2028</p>
+                    </div>
+                    <div class="info-card glass-card">
+                        <div class="info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <h4>Location</h4>
+                        <p class="info-main">Dehradun, India</p>
+                        <p class="info-sub">Open to remote opportunities</p>
+                    </div>
+                    <div class="info-card glass-card">
+                        <div class="info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h4>Certification</h4>
+                        <p class="info-main">AWS AI Practitioner</p>
+                        <p class="info-sub">Certified</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-dark" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">02 — Skills</span>
+                <h2 class="section-title">Technical Arsenal</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category glass-card" data-category="languages">
+                    <div class="skill-cat-header">
+                        <div class="skill-cat-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-dot"></span>Python</div>
+                        <div class="skill-item"><span class="skill-dot"></span>C++</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Java</div>
+                        <div class="skill-item"><span class="skill-dot"></span>C</div>
+                        <div class="skill-item"><span class="skill-dot"></span>JavaScript</div>
+                        <div class="skill-item"><span class="skill-dot"></span>SQL</div>
+                    </div>
+                </div>
+                <div class="skill-category glass-card" data-category="ai-ml">
+                    <div class="skill-cat-header">
+                        <div class="skill-cat-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+                        </div>
+                        <h3>NLP / ML</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-dot"></span>PyTorch</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Hugging Face</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Scikit-learn</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Pandas / NumPy</div>
+                        <div class="skill-item"><span class="skill-dot"></span>LLM Prompt Eng.</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Multi-Agent Systems</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Agentic Pipelines</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Eval Frameworks</div>
+                    </div>
+                </div>
+                <div class="skill-category glass-card" data-category="backend">
+                    <div class="skill-cat-header">
+                        <div class="skill-cat-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </div>
+                        <h3>Backend & Cloud</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-dot"></span>FastAPI</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Flask</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Node.js</div>
+                        <div class="skill-item"><span class="skill-dot"></span>MongoDB</div>
+                        <div class="skill-item"><span class="skill-dot"></span>REST APIs</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Docker</div>
+                        <div class="skill-item"><span class="skill-dot"></span>AWS</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Gradio / Streamlit</div>
+                    </div>
+                </div>
+                <div class="skill-category glass-card" data-category="tools">
+                    <div class="skill-cat-header">
+                        <div class="skill-cat-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+                        </div>
+                        <h3>Dev Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-dot"></span>Git / GitHub</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Linux / Unix</div>
+                        <div class="skill-item"><span class="skill-dot"></span>CI/CD Pipelines</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Jupyter Notebooks</div>
+                        <div class="skill-item"><span class="skill-dot"></span>HF Spaces</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">03 — Projects</span>
+                <h2 class="section-title">Featured Work</h2>
+                <p class="section-subtitle">A showcase of my most impactful projects across AI, ML, and full-stack development.</p>
+            </div>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card glass-card featured">
+                    <div class="project-header">
+                        <div class="project-meta">
+                            <span class="project-date">May 2026</span>
+                            <span class="project-status status-progress">In Progress</span>
+                        </div>
+                        <div class="project-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Orator — Speech Mastery Platform</h3>
+                    <p class="project-role">Solo Project · Vite, Vanilla JS, Web Audio/Speech APIs, CSS</p>
+                    <p class="project-desc">
+                        High-performance, language-agnostic speech analysis platform using <strong>Web Audio API</strong> for real-time 
+                        acoustic analysis (FFT pitch detection) and <strong>Web Speech API</strong> for STT. Features a custom 
+                        <strong>Emotion & Intent Layer</strong> for paralinguistic analysis and an <strong>Adaptive Learning Path</strong> 
+                        with spaced repetition. Premium dark-themed UI with dynamic 60fps Canvas waveform visualizations.
+                    </p>
+                    <div class="project-tech">
+                        <span>Vite</span><span>JavaScript</span><span>Web Audio API</span><span>FFT</span><span>Canvas</span><span>CSS</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card featured">
+                    <div class="project-header">
+                        <div class="project-meta">
+                            <span class="project-date">Apr 2026</span>
+                            <span class="project-status status-progress">In Progress</span>
+                        </div>
+                        <div class="project-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Judicial Multi-Agent Debate Arena</h3>
+                    <p class="project-role">Team Lead · Python, Groq LLMs, Hugging Face, Docker</p>
+                    <p class="project-desc">
+                        Architected a <strong>3-agent LLM pipeline</strong> (Plaintiff, Defendant, Judge) with structured prompt chains 
+                        performing <strong>IRAC-based legal reasoning</strong>. Built <strong>anti-hallucination guardrails</strong> 
+                        with live legal database verification. Deployed on Hugging Face Spaces with Gradio UI.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span><span>Groq</span><span>LLMs</span><span>Docker</span><span>Gradio</span><span>HF Spaces</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <div class="project-meta">
+                            <span class="project-date">Mar 2026</span>
+                            <span class="project-status status-complete">Completed</span>
+                        </div>
+                        <div class="project-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Echoes of the Sentinel — 2D Horror Game</h3>
+                    <p class="project-role">Team Lead · Java, AWT/Swing, OOP Patterns</p>
+                    <p class="project-desc">
+                        Led design of a modular game engine using <strong>entity-component systems</strong> and OOP patterns 
+                        (State, Observer, Factory). Built custom rendering pipeline and time-decay scoring.
+                    </p>
+                    <div class="project-tech">
+                        <span>Java</span><span>AWT/Swing</span><span>OOP</span><span>Game Engine</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <div class="project-meta">
+                            <span class="project-date">2026</span>
+                            <span class="project-status status-progress">In Progress</span>
+                        </div>
+                        <div class="project-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Digital Twin of You — Predictive Behavioral Engine</h3>
+                    <p class="project-role">Team Lead · React, FastAPI, Scikit-learn</p>
+                    <p class="project-desc">
+                        Built a <strong>Decision Tree classification pipeline</strong> with custom feature engineering using 
+                        Pandas/NumPy for 14-day time-series behavioral prediction. React frontend + FastAPI backend + SQLite.
+                    </p>
+                    <div class="project-tech">
+                        <span>React</span><span>FastAPI</span><span>Scikit-learn</span><span>SQLite</span>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <div class="project-meta">
+                            <span class="project-date">Apr 2026</span>
+                            <span class="project-status status-complete">Completed</span>
+                        </div>
+                        <div class="project-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 17H4a2 2 0 01-2-2V5a2 2 0 012-2h16a2 2 0 012 2v10a2 2 0 01-2 2h-1"/><polygon points="12 15 17 21 7 21 12 15"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Smart Ambulance Routing System</h3>
+                    <p class="project-role">Team Lead · JavaScript, Leaflet.js, Node.js</p>
+                    <p class="project-desc">
+                        Real-time <strong>emergency dispatch system</strong> optimizing ambulance→patient→hospital routing 
+                        with live geolocation. High-concurrency APIs with dual-path animated visualization on Leaflet map.
+                    </p>
+                    <div class="project-tech">
+                        <span>JavaScript</span><span>Leaflet.js</span><span>Node.js</span><span>Geolocation</span>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <div class="project-meta">
+                            <span class="project-date">2025</span>
+                            <span class="project-status status-complete">Completed</span>
+                        </div>
+                        <div class="project-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">GreenMart — Supply Chain Optimizer</h3>
+                    <p class="project-role">Team Lead · C++, Node.js</p>
+                    <p class="project-desc">
+                        Memory-safe <strong>C++ backend</strong> with Max-Heap delivery optimization. 
+                        Node.js middleware for real-time buyer workflows. Full-stack supply chain management solution.
+                    </p>
+                    <div class="project-tech">
+                        <span>C++</span><span>Node.js</span><span>Max-Heap</span><span>Optimization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section section-dark" id="achievements">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">04 — Achievements</span>
+                <h2 class="section-title">Recognition & Awards</h2>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card glass-card">
+                    <div class="achievement-rank">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <h3>Meta PyTorch Conference</h3>
+                    <p class="achievement-detail">National Finalist — Selected among top teams nationwide for ML/NLP research; presented at the finals in Bangalore.</p>
+                </div>
+                <div class="achievement-card glass-card">
+                    <div class="achievement-rank">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                    </div>
+                    <h3>State Topper — Int'l Math Olympiad</h3>
+                    <p class="achievement-detail">Ranked #1 in state for logical reasoning & analytical problem-solving at the International Olympiad of Mathematics.</p>
+                </div>
+                <div class="achievement-card glass-card">
+                    <div class="achievement-rank">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 9H4.5a2.5 2.5 0 010-5H6"/><path d="M18 9h1.5a2.5 2.5 0 000-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0012 0V2z"/></svg>
+                    </div>
+                    <h3>1st Prize — Debate (GEU)</h3>
+                    <p class="achievement-detail">Won first place in the university-level debate competition at Graphic Era University.</p>
+                </div>
+                <div class="achievement-card glass-card">
+                    <div class="achievement-rank">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3>INSPIRE Award</h3>
+                    <p class="achievement-detail">Dept. of Science & Technology, Govt. of India — National recognition for innovation and scientific aptitude.</p>
+                </div>
+                <div class="achievement-card glass-card">
+                    <div class="achievement-rank">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    </div>
+                    <h3>Hack-o-Holic — 24hr Hackathon</h3>
+                    <p class="achievement-detail">Built and deployed a full-stack ML-powered predictive system within a 24-hour competitive sprint.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="section" id="leadership">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">05 — Leadership</span>
+                <h2 class="section-title">Beyond Code</h2>
+            </div>
+            <div class="leadership-grid">
+                <div class="leadership-card glass-card">
+                    <div class="leadership-icon">👑</div>
+                    <h3>School Captain</h3>
+                    <p>Elected to lead a student body of 1,000+; managed a 12-member council and coordinated major institutional logistics.</p>
+                </div>
+                <div class="leadership-card glass-card">
+                    <div class="leadership-icon">💻</div>
+                    <h3>Competitive Coding</h3>
+                    <p>Active participant in Code Hunt and Graph-e-Thon; focus on Graph theory and Algorithms.</p>
+                </div>
+                <div class="leadership-card glass-card">
+                    <div class="leadership-icon">🎙️</div>
+                    <h3>Debate & Argumentation</h3>
+                    <p>Technical Argumentation & Global Debating enthusiast with proven competitive success.</p>
+                </div>
+                <div class="leadership-card glass-card">
+                    <div class="leadership-icon">🎭</div>
+                    <h3>Arts & Expression</h3>
+                    <p>Passionate about Singing and Dancing — bringing creativity and expressiveness beyond the terminal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-dark" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">06 — Connect</span>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+            </div>
+            <div class="contact-grid">
+                <a href="mailto:rishitaramola0412@gmail.com" class="contact-card glass-card" id="contact-email">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+                    <h3>Email</h3>
+                    <p>rishitaramola0412@gmail.com</p>
+                </a>
+                <a href="https://www.linkedin.com/in/rishita-ramola-18a456326/" target="_blank" rel="noopener" class="contact-card glass-card" id="contact-linkedin">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p>Rishita Ramola</p>
+                </a>
+                <a href="tel:+919410979711" class="contact-card glass-card" id="contact-phone">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>+91 9410979711</p>
+                </a>
+                <a href="https://github.com/rishitaramola" target="_blank" rel="noopener" class="contact-card glass-card" id="contact-github">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>View Repositories</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <p class="footer-text">
+                    Designed & Built by <strong>Rishita Ramola</strong> — © 2026
+                </p>
+                <p class="footer-sub">Crafted with passion for AI & innovation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
