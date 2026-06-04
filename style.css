@@ -353,7 +353,7 @@ strong {
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
-    object-position: center 10%;
+    object-position: center 2%;
     border: 3px solid var(--bg-primary);
     display: block;
     transform: scale(0.92);
