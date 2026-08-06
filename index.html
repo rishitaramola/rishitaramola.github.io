@@ -40,8 +40,10 @@
                 <a href="#about" class="nav-link">About</a>
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#projects" class="nav-link">Projects</a>
+                <a href="#achievements" class="nav-link">Awards</a>
+                <a href="#experience" class="nav-link">Experience</a>
                 <a href="#current" class="nav-link">Current</a>
-                <a href="#timeline" class="nav-link">Timeline</a>
+                <a href="#leadership" class="nav-link">More</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
@@ -100,18 +102,23 @@
             </div>
             <div class="hero-stats animate-in">
                 <div class="stat">
-                    <span class="stat-number" data-target="7">0</span><span class="stat-plus">+</span>
+                    <span class="stat-number" data-target="12">0</span><span class="stat-plus">+</span>
                     <span class="stat-label">Projects</span>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat">
-                    <span class="stat-number" data-target="6">0</span><span class="stat-plus">+</span>
+                    <span class="stat-number" data-target="7">0</span><span class="stat-plus">+</span>
                     <span class="stat-label">Awards</span>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat">
                     <span class="stat-number" data-target="30">0</span><span class="stat-plus">+</span>
                     <span class="stat-label">Technologies</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="8">0</span><span class="stat-plus">.51</span>
+                    <span class="stat-label">CGPA / 10</span>
                 </div>
             </div>
         </div>
@@ -393,13 +400,16 @@
                     <h3 class="project-title">Orator — Speech Mastery Platform</h3>
                     <p class="project-role">Solo Project · Vite, Vanilla JS, Web Audio/Speech APIs, CSS</p>
                     <p class="project-desc">
-                        High-performance, language-agnostic speech analysis platform using <strong>Web Audio API</strong> for real-time 
-                        acoustic analysis (FFT pitch detection) and <strong>Web Speech API</strong> for STT. Features a custom 
-                        <strong>Emotion &amp; Intent Layer</strong> for paralinguistic analysis and an <strong>Adaptive Learning Path</strong> 
-                        with spaced repetition. Premium dark-themed UI with dynamic 60fps Canvas waveform visualizations.
+                        High-performance, <strong>universal multi-lingual</strong> speech analysis platform using <strong>Web Audio API</strong> (FFT pitch detection) and <strong>Web Speech API</strong>. Custom <strong>Emotion &amp; Intent Layer</strong> for paralinguistic analysis (EAS scoring) and <strong>Adaptive Learning Path</strong> with spaced repetition for phoneme mastery and L1 interference prediction. Zero-backend architecture with 60fps Canvas waveform visualizations.
                     </p>
                     <div class="project-tech">
                         <span>Vite</span><span>JavaScript</span><span>Web Audio API</span><span>FFT</span><span>Canvas</span><span>CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/rishitaramola/ORATORY_APP" target="_blank" rel="noopener" class="project-link-btn">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            GitHub
+                        </a>
                     </div>
                 </div>
                 <div class="project-card glass-card featured">
@@ -412,15 +422,19 @@
                             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                         </div>
                     </div>
-                    <h3 class="project-title">Judicial Multi-Agent Debate Arena</h3>
-                    <p class="project-role">Team Lead · Python, Groq LLMs, Hugging Face, Docker</p>
+                    <h3 class="project-title">Justice AI — Reinforcement Learning Legal System</h3>
+                    <p class="project-role">Team Lead · Python, RL, Groq LLMs, Hugging Face, Gradio</p>
                     <p class="project-desc">
-                        Architected a <strong>3-agent LLM pipeline</strong> (Plaintiff, Defendant, Judge) with structured prompt chains 
-                        performing <strong>IRAC-based legal reasoning</strong>. Built <strong>anti-hallucination guardrails</strong> 
-                        with live legal database verification. Deployed on Hugging Face Spaces with Gradio UI.
+                        Autonomous legal reasoning platform leveraging <strong>Reinforcement Learning (RL)</strong> for dynamic multi-agent IRAC-based legal evaluation. Designed <strong>anti-hallucination guardrails</strong> with live legal database verification and citation accuracy checks — functioning as a custom <strong>evaluation framework</strong> for LLM output quality. NLP query parsing extracts legal entities and statutes; deployed on HF Spaces.
                     </p>
                     <div class="project-tech">
-                        <span>Python</span><span>Groq</span><span>LLMs</span><span>Docker</span><span>Gradio</span><span>HF Spaces</span>
+                        <span>Python</span><span>Groq</span><span>RL</span><span>Docker</span><span>Gradio</span><span>HF Spaces</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/rishitaramola/judicial-reasoning-env" target="_blank" rel="noopener" class="project-link-btn">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            GitHub
+                        </a>
                     </div>
                 </div>
                 <div class="project-card glass-card">
@@ -456,11 +470,16 @@
                     <h3 class="project-title">Digital Twin of You — Predictive Behavioral Engine</h3>
                     <p class="project-role">Team Lead · React, FastAPI, Scikit-learn</p>
                     <p class="project-desc">
-                        Built a <strong>Decision Tree classification pipeline</strong> with custom feature engineering using 
-                        Pandas/NumPy for 14-day time-series behavioral prediction. React frontend + FastAPI backend + SQLite.
+                        <strong>Decision Tree classification pipeline</strong> (Scikit-learn) with custom feature engineering using Pandas/NumPy to predict behavioral outcomes from 14-day time-series data. Observation and intervention engines performing real-time pattern detection and chain analysis. React frontend + FastAPI backend + SQLite.
                     </p>
                     <div class="project-tech">
-                        <span>React</span><span>FastAPI</span><span>Scikit-learn</span><span>SQLite</span>
+                        <span>React</span><span>FastAPI</span><span>Scikit-learn</span><span>Pandas</span><span>NumPy</span><span>SQLite</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/rishitaramola/DigitalTwin" target="_blank" rel="noopener" class="project-link-btn">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            GitHub
+                        </a>
                     </div>
                 </div>
                 <div class="project-card glass-card">
@@ -473,14 +492,19 @@
                             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 17H4a2 2 0 01-2-2V5a2 2 0 012-2h16a2 2 0 012 2v10a2 2 0 01-2 2h-1"/><polygon points="12 15 17 21 7 21 12 15"/></svg>
                         </div>
                     </div>
-                    <h3 class="project-title">Smart Ambulance Routing System</h3>
-                    <p class="project-role">Team Lead · JavaScript, Leaflet.js, Node.js</p>
+                    <h3 class="project-title">Rapid-Rescue — Smart Ambulance Routing System</h3>
+                    <p class="project-role">Team Lead · JavaScript, Leaflet.js, Node.js · Live on Vercel</p>
                     <p class="project-desc">
-                        Real-time <strong>emergency dispatch system</strong> optimizing ambulance-patient-hospital routing 
-                        with live geolocation. High-concurrency APIs with dual-path animated visualization on Leaflet map.
+                        Real-time <strong>emergency dispatch system</strong> optimizing ambulance→patient→hospital routing with live geolocation data. High-concurrency APIs for mission-critical data integrity with dual-path animated visualization on an interactive Leaflet map.
                     </p>
                     <div class="project-tech">
-                        <span>JavaScript</span><span>Leaflet.js</span><span>Node.js</span><span>Geolocation</span>
+                        <span>JavaScript</span><span>Leaflet.js</span><span>Node.js</span><span>Geolocation API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/rishitaramola/Rapid-Rescue" target="_blank" rel="noopener" class="project-link-btn">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            GitHub
+                        </a>
                     </div>
                 </div>
                 <div class="project-card glass-card">
@@ -516,11 +540,20 @@
                     <h3 class="project-title">BE YOU — AI Beauty Salon Marketplace</h3>
                     <p class="project-role">Solo Project · Next.js, React, Tailwind CSS, REST APIs</p>
                     <p class="project-desc">
-                        Built a full-stack <strong>AI-powered beauty marketplace</strong> connecting users with curated salons in Mumbai. 
-                        Features an <strong>AI Beauty Concierge</strong> for personalized recommendations, dynamic booking flows, and trend forecasting.
+                        Full-stack <strong>AI-powered beauty marketplace</strong> connecting users with curated salons in Mumbai. Features an <strong>AI Beauty Concierge</strong> for personalized recommendations, dynamic booking flows, and trend forecasting.
                     </p>
                     <div class="project-tech">
-                        <span>Next.js</span><span>React</span><span>Tailwind CSS</span><span>AI</span>
+                        <span>Next.js</span><span>React</span><span>Tailwind CSS</span><span>AI</span><span>REST APIs</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://alacritybeautysalon-navy.vercel.app" target="_blank" rel="noopener" class="project-link-btn project-link-live">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/rishitaramola" target="_blank" rel="noopener" class="project-link-btn">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            GitHub
+                        </a>
                     </div>
                 </div>
                 <div class="project-card glass-card">
@@ -536,11 +569,16 @@
                     <h3 class="project-title">Armory — AI Workflow Automation Platform</h3>
                     <p class="project-role">Solo Project · HTML, CSS, JavaScript</p>
                     <p class="project-desc">
-                        Designed and shipped a <strong>SaaS landing page</strong> for an AI automation platform featuring multi-modal sync, 
-                        real-time telemetry with sub-millisecond latency monitoring, and an interactive bento-grid feature showcase.
+                        <strong>SaaS landing page</strong> for an AI automation platform featuring multi-modal sync, real-time telemetry with sub-millisecond latency monitoring, and an interactive bento-grid feature showcase.
                     </p>
                     <div class="project-tech">
                         <span>HTML</span><span>CSS</span><span>JavaScript</span><span>UI/UX</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://vibecoding-tan.vercel.app" target="_blank" rel="noopener" class="project-link-btn project-link-live">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            Live Demo
+                        </a>
                     </div>
                 </div>
                 <div class="project-card glass-card">
@@ -556,11 +594,16 @@
                     <h3 class="project-title">JobPulse — AI Job Market Intelligence</h3>
                     <p class="project-role">Solo Project · JavaScript, HTML/CSS, Anakin Wire API</p>
                     <p class="project-desc">
-                        Engineered a <strong>real-time job market analysis tool</strong> that scrapes live job listings and applies AI to surface 
-                        trending skills, salary ranges, and top hiring companies. Integrated <strong>Anakin Wire AI API</strong> for NLP-driven market intelligence summaries.
+                        <strong>Real-time job market analysis tool</strong> that scrapes live job listings and applies AI to surface trending skills, salary ranges, and top hiring companies. Integrated <strong>Anakin Wire AI API</strong> for NLP-driven market intelligence summaries.
                     </p>
                     <div class="project-tech">
                         <span>JavaScript</span><span>Anakin Wire API</span><span>Web Scraping</span><span>NLP</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://jobpulse-t2py.vercel.app" target="_blank" rel="noopener" class="project-link-btn project-link-live">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            Live Demo
+                        </a>
                     </div>
                 </div>
             </div>
@@ -575,48 +618,130 @@
                 <h2 class="section-title">Recognition &amp; Awards</h2>
             </div>
             <div class="achievements-grid">
-                <div class="achievement-card glass-card">
+                <div class="achievement-card glass-card achievement-highlight">
+                    <div class="achievement-badge">🏆</div>
                     <div class="achievement-rank">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                     </div>
                     <h3>Meta PyTorch Conference</h3>
-                    <p class="achievement-detail">National Finalist — Selected among top teams nationwide for ML/NLP research; presented at the finals in Bangalore.</p>
+                    <p class="achievement-org">National Finals · Bangalore</p>
+                    <p class="achievement-detail">Selected among top teams nationwide for ML/NLP research; presented at the finals in Bangalore. Competed against the brightest CS minds across India.</p>
+                </div>
+                <div class="achievement-card glass-card achievement-highlight">
+                    <div class="achievement-badge">🎵</div>
+                    <div class="achievement-rank">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+                    </div>
+                    <h3>Google Gemini Battle of Bands</h3>
+                    <p class="achievement-org">'Best Concept' Award · Google</p>
+                    <p class="achievement-detail">Won Best Concept for original composition "Adhuri Udaan" using Gemini, Lyria &amp; Nano Banana. Selected for an exclusive Google feedback interview.</p>
                 </div>
                 <div class="achievement-card glass-card">
+                    <div class="achievement-badge">🏅</div>
                     <div class="achievement-rank">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
                     </div>
-                    <h3>State Topper — Int'l Math Olympiad</h3>
-                    <p class="achievement-detail">Ranked #1 in state for logical reasoning &amp; analytical problem-solving at the International Olympiad of Mathematics.</p>
+                    <h3>State Topper &amp; National Rank 14</h3>
+                    <p class="achievement-org">International Olympiad of Mathematics</p>
+                    <p class="achievement-detail">Ranked #1 in Uttarakhand &amp; #14 nationally for logical reasoning &amp; analytical problem-solving in the International Olympiad of Mathematics.</p>
                 </div>
                 <div class="achievement-card glass-card">
+                    <div class="achievement-badge">🛒</div>
+                    <div class="achievement-rank">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                    </div>
+                    <h3>Flipkart GRiD 8.0 — Round 3</h3>
+                    <p class="achievement-org">Software Development Track · National</p>
+                    <p class="achievement-detail">Advanced to Round 3 in the Software Development Track from a highly competitive national pool, demonstrating strong proficiency in DSA and problem-solving.</p>
+                </div>
+                <div class="achievement-card glass-card">
+                    <div class="achievement-badge">🏆</div>
                     <div class="achievement-rank">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 9H4.5a2.5 2.5 0 010-5H6"/><path d="M18 9h1.5a2.5 2.5 0 000-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0012 0V2z"/></svg>
                     </div>
                     <h3>1st Prize — Debate (GEU)</h3>
-                    <p class="achievement-detail">Won first place in the university-level debate competition at Graphic Era University.</p>
+                    <p class="achievement-org">Graphic Era University</p>
+                    <p class="achievement-detail">Won first place in the university-level debate competition, recognized for structured argumentation and persuasive communication.</p>
                 </div>
                 <div class="achievement-card glass-card">
+                    <div class="achievement-badge">🔬</div>
                     <div class="achievement-rank">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
                     </div>
-                    <h3>INSPIRE Award</h3>
-                    <p class="achievement-detail">Dept. of Science &amp; Technology, Govt. of India — Selected to represent the district in recognition of innovation and scientific aptitude.</p>
-                </div>
-
-                <div class="achievement-card glass-card">
-                    <div class="achievement-rank">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
-                    </div>
-                    <h3>Google Gemini Music Night</h3>
-                    <p class="achievement-detail">'Best Concept' Award — Won Best Concept for an AI Band generated via Gemini/Lyria; selected for a Google feedback interview.</p>
+                    <h3>INSPIRE Award — ₹10,000</h3>
+                    <p class="achievement-org">Dept. of Science &amp; Technology, Govt. of India</p>
+                    <p class="achievement-detail">Selected to represent the district and awarded ₹10,000 cash prize in recognition of an innovative science model idea by DST, India.</p>
                 </div>
                 <div class="achievement-card glass-card">
+                    <div class="achievement-badge">💻</div>
                     <div class="achievement-rank">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
                     </div>
                     <h3>Bharat Academix CodeQuest</h3>
-                    <p class="achievement-detail">Cleared Round 1 — Represented Graphic Era University; successfully cleared Idea Submission and advanced to Prototype Development.</p>
+                    <p class="achievement-org">Team ALACRITY · Graphic Era University</p>
+                    <p class="achievement-detail">Cleared Round 1 — Represented GEU as Team ALACRITY; successfully advanced to Round 2 (Prototype Development).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">05 — Experience</span>
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">Real-world application of my skills and knowledge.</p>
+            </div>
+            <div class="experience-list">
+                <div class="experience-card glass-card">
+                    <div class="exp-left">
+                        <div class="exp-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.657 2.686 3 6 3s6-1.343 6-3v-5"/></svg>
+                        </div>
+                        <div class="exp-timeline-line"></div>
+                    </div>
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-title">Computer Science Educator</h3>
+                                <p class="exp-company">Independent · ICSE Class 10 Java Tutor</p>
+                            </div>
+                            <span class="exp-badge">Teaching</span>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Instructed Class 10 ICSE students in <strong>Java and OOP concepts</strong>, designing tailored coding exercises to boost problem-solving skills and board exam performance.</li>
+                            <li>Developed custom curriculum covering core data structures, algorithms, and object-oriented design principles aligned with ICSE syllabus.</li>
+                            <li>Applied pedagogical techniques to simplify complex programming concepts, resulting in improved student confidence and examination scores.</li>
+                        </ul>
+                        <div class="exp-skills">
+                            <span>Java</span><span>OOP</span><span>Data Structures</span><span>Algorithms</span><span>Curriculum Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-card glass-card">
+                    <div class="exp-left">
+                        <div class="exp-icon exp-icon-aws">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        </div>
+                    </div>
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-title">AWS Certified AI Practitioner</h3>
+                                <p class="exp-company">Amazon Web Services · Certification</p>
+                            </div>
+                            <span class="exp-badge exp-badge-cert">Certified</span>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Earned the <strong>AWS AI Practitioner</strong> certification, demonstrating proficiency in cloud-based AI/ML services and architectures.</li>
+                            <li>Developed expertise in AWS SageMaker, Bedrock, Rekognition, and other managed ML services for production deployments.</li>
+                        </ul>
+                        <div class="exp-skills">
+                            <span>AWS SageMaker</span><span>AWS Bedrock</span><span>Cloud AI/ML</span><span>MLOps</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -626,7 +751,7 @@
     <section class="section" id="current">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">05 — Current Focus</span>
+                <span class="section-tag">06 — Current Focus</span>
                 <h2 class="section-title">What I'm Working On</h2>
             </div>
             <div class="current-grid">
@@ -674,7 +799,7 @@
     <section class="section section-dark" id="timeline">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">06 — Journey</span>
+                <span class="section-tag">07 — Journey</span>
                 <h2 class="section-title">My Timeline</h2>
             </div>
             <div class="timeline">
@@ -693,24 +818,31 @@
                     </div>
                 </div>
                 <div class="timeline-item glass-card">
+                    <div class="timeline-date">2026</div>
+                    <div class="timeline-content">
+                        <h3>Flipkart GRiD 8.0 — Round 3 Shortlist</h3>
+                        <p>Advanced to Round 3 in the Software Development Track from a highly competitive national pool, demonstrating strong DSA proficiency.</p>
+                    </div>
+                </div>
+                <div class="timeline-item glass-card">
                     <div class="timeline-date">2025</div>
                     <div class="timeline-content">
                         <h3>GreenMart &amp; AWS Certification</h3>
-                        <p>Delivered supply chain optimizer in C++/Node.js. Earned AWS AI Practitioner certification.</p>
+                        <p>Delivered supply chain optimizer in C++/Node.js. Earned AWS AI Practitioner certification — cloud AI/ML expertise validated.</p>
                     </div>
                 </div>
                 <div class="timeline-item glass-card">
                     <div class="timeline-date">2024</div>
                     <div class="timeline-content">
-                        <h3>Started B.Tech at Graphic Era University</h3>
-                        <p>Began Computer Science &amp; Engineering. Class XII from Carmel School with 85%.</p>
+                        <h3>Started B.Tech CSE at Graphic Era University</h3>
+                        <p>Began B.Tech in Computer Science &amp; Engineering with CGPA 8.51/10. Passed ISC Class XII from Carmel School, Chamba with 85%.</p>
                     </div>
                 </div>
                 <div class="timeline-item glass-card">
                     <div class="timeline-date">2022</div>
                     <div class="timeline-content">
-                        <h3>School Captain &amp; Early Achievements</h3>
-                        <p>Led 1,000+ students. INSPIRE Award recipient. State Topper in International Math Olympiad.</p>
+                        <h3>School Captain, INSPIRE Award &amp; Math Olympiad</h3>
+                        <p>Elected School Captain, leading 1,000+ students. Received INSPIRE Award from DST, Govt. of India (₹10,000). Scored 88% in ICSE Class X. State Topper &amp; National Rank 14 in the International Olympiad of Mathematics.</p>
                     </div>
                 </div>
             </div>
@@ -721,29 +853,39 @@
     <section class="section" id="leadership">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">07 — Leadership</span>
+                <span class="section-tag">08 — Beyond Code</span>
                 <h2 class="section-title">Beyond Code</h2>
             </div>
             <div class="leadership-grid">
                 <div class="leadership-card glass-card">
                     <div class="leadership-icon">👑</div>
                     <h3>School Captain</h3>
-                    <p>Elected to lead a student body of 1,000+; managed a 12-member council and coordinated major institutional logistics.</p>
+                    <p>Elected to lead a student body of 1,000+; managed a 12-member council, coordinated major institutional initiatives, and represented the student community at school-wide level.</p>
+                </div>
+                <div class="leadership-card glass-card">
+                    <div class="leadership-icon">🏅</div>
+                    <h3>School Athlete</h3>
+                    <p>Competed in inter-school sports meets in <strong>Discus Throw</strong>; represented the house in <strong>Basketball</strong> and <strong>Volleyball</strong>. Demonstrated competitive discipline and physical endurance.</p>
                 </div>
                 <div class="leadership-card glass-card">
                     <div class="leadership-icon">💻</div>
                     <h3>Competitive Coding</h3>
-                    <p>Active participant in Code Hunt and Graph-e-Thon; focus on Graph theory and Algorithms.</p>
+                    <p>Active participant across multiple coding competitions; focus on Graph Theory and Algorithms. Consistent performance in Code Hunt and Graph-e-Thon events.</p>
                 </div>
                 <div class="leadership-card glass-card">
                     <div class="leadership-icon">🎙️</div>
-                    <h3>Debate &amp; Argumentation</h3>
-                    <p>Technical Argumentation &amp; Global Debating enthusiast with proven competitive success.</p>
+                    <h3>Debate &amp; Public Speaking</h3>
+                    <p>Passionate about structured argumentation and persuasive communication. 1st Prize winner at GEU Debate. Technical Argumentation &amp; Global Debating enthusiast.</p>
                 </div>
                 <div class="leadership-card glass-card">
                     <div class="leadership-icon">🎭</div>
                     <h3>Creative Pursuits</h3>
-                    <p>Passionate about Poetry, Singing, and Dancing — bringing creativity and expressiveness beyond the terminal.</p>
+                    <p>Passionate about Poetry, Singing, and Dancing. Winner of the Google Gemini 'Best Concept' award for the original composition "Adhuri Udaan" created using Gemini AI tools.</p>
+                </div>
+                <div class="leadership-card glass-card">
+                    <div class="leadership-icon">🧠</div>
+                    <h3>Core Strengths</h3>
+                    <p>Creative Problem-Solving · Verbal Communication &amp; Public Speaking · Rapid Adaptability · Leadership · Collaborative Teamwork · Analytical Thinking</p>
                 </div>
             </div>
         </div>
@@ -753,7 +895,7 @@
     <section class="section section-dark" id="contact">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">08 — Connect</span>
+                <span class="section-tag">09 — Connect</span>
                 <h2 class="section-title">Let's Work Together</h2>
                 <p class="section-subtitle">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
             </div>
